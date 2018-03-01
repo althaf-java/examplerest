@@ -5,6 +5,8 @@ OR
 mvn spring-boot:run
 
 http://localhost:8080//announcements/1/vote
+
+
 http://localhost:8080//announcements/2/vote
 
 The Path structure changed to /announcements/{announcementId}/vote
