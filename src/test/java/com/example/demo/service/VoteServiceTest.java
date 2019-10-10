@@ -26,14 +26,25 @@ public class VoteServiceTest {
     
     @Test
     public void testGetVote() {
-        int announcementId = 1;
+        int voteId = 1;
         Vote vote = mock(Vote.class);
-        when(voteDao.getVote(announcementId)).thenReturn(vote);
+        when(voteDao.getVote(voteId)).thenReturn(vote);
         
-        Vote voteReturned = voteService.getVote(1);
+        Vote voteReturned = voteService.getVote(voteId);
         
-        verify(voteDao, times(1)).getVote(announcementId);
+        verify(voteDao, times(1)).getVote(voteId);
         assertEquals(vote, voteReturned);
+    }
+
+    @Test
+    public void testGetVoteReturnNullForInvalidId() {
+        int voteId = 2;
+        when(voteDao.getVote(voteId)).thenReturn(null);
+
+        Vote voteReturned = voteService.getVote(voteId);
+
+        verify(voteDao, times(1)).getVote(voteId);
+        assertEquals(null, voteReturned);
     }
 
 }

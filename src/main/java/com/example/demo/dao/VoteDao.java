@@ -7,6 +7,9 @@ import org.springframework.stereotype.Component;
 
 import com.example.demo.model.Vote;
 
+/**
+ * NOTE: This is a dummy DAO.
+ */
 @Component
 public class VoteDao {
     
