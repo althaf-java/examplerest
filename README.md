@@ -21,5 +21,6 @@ The Path structure changed to /announcements/{announcementId}/vote
 
 NOTE:
 Added mock mvc test
-Not added all junit tests, profiles and etc
+Not added all junit tests, profiles and etc.
+Integration tests are not added for now.
 
