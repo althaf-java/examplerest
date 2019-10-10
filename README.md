@@ -2,7 +2,7 @@ This is an example for a simple REST API developed using Spring boot.
 
 Problem:
 
-Develop an API to find the likes and dislikes of an announcement topic by id.
+Develop an API to find the likes and dislikes of a vote by id.
 
 Solution:
 
