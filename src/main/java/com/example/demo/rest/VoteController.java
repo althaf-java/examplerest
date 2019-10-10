@@ -12,13 +12,13 @@ import com.example.demo.model.Vote;
 import com.example.demo.service.VoteService;
 
 @RestController
-@RequestMapping(value = "/announcements")
+@RequestMapping(value = "/votes")
 public class VoteController {
 
     @Autowired
     private VoteService voteService;
     
-    @RequestMapping(value = "/{id}/vote",
+    @RequestMapping(value = "/{id}",
             method = RequestMethod.GET)
     public ResponseEntity<Vote> getVote(@PathVariable("id") Integer id) throws Exception {
         Vote vote = this.voteService.getVote(id);

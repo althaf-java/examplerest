@@ -12,12 +12,10 @@ Run 'Application.java' from IDE
 OR
 mvn spring-boot:run
 
-http://localhost:8080//announcements/1/vote
+http://localhost:8080/votes/1
 
 
-http://localhost:8080//announcements/2/vote
-
-The Path structure changed to /announcements/{announcementId}/vote
+http://localhost:8080/votes/2
 
 NOTE:
 Added mock mvc test

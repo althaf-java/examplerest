@@ -35,7 +35,7 @@ public class VoteControllerTest {
 
 	@Test
 	public void testGetVote() throws Exception {
-	    mvc.perform(get("/announcements/1/vote"))
+	    mvc.perform(get("/votes/1"))
     	    .andDo(print())
             .andExpect(status().isOk())
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
